@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Form Template</title>
+  <title>Data Processing</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
@@ -14,7 +14,7 @@
 
 <body>
   <header>
-    <h1 class="page-header">Form Template</h1>
+    <h1 class="page-header">Shipping Info</h1>
     <nav class="topnav" id="myTopnav">
       <a href="index.html" class="active">Home</a>
       <a href="#">Link</a>
@@ -26,27 +26,36 @@
 
   <main class="wrapper">
 
-    <h2 class="subheader">Place form code below:</h2>
+    <h2 class="subheader">Shipping info:</h2>
     <form class="main-form" action="" method="get">
       <div>
         <label for="FirstName">First Name</label> <br>
-        <input type="text" name="FirstName" id="FirstName" placeholder="First Name Here" required autofocus>
+        <input type="text" name="First_Name" id="FirstName"
+          placeholder="First Name Here" required autofocus>
       </div>
       <div>
         <label for="LastName">Last Name</label> <br>
-        <input type="text" name="LastName" id="LastName" placeholder="Last Name Here" required>
+        <input type="text" name="Last_Name" id="LastName"
+          placeholder="Last Name Here" required>
       </div>
       <div>
         <label for="Email">Email</label> <br>
-        <input type="email" name="Email" id="Email" placeholder="Email Here" required>
+        <input type="email" name="Email" id="Email"
+          placeholder="Email Here" required>
       </div>
       <div>
         <label for="Address">Address</label> <br>
-        <input type="text" name="Address" id="Address" placeholder="Last Name Here" required>
+        <input type="text" name="Address" id="Address"
+          placeholder="Address here" required>
+      </div>
+      <div>
+        <label for="City">City</label> <br>
+        <input type="text" name="City" id="City"
+          placeholder="City Here" required>
       </div>
       <div>
         <label for="State">State</label> <br>
-        <select name="State" id="State" required> 
+        <select name="State" id="State" required>
 
           <option value="">Select a State</option>
           <option value="AK">Alaska</option>
@@ -58,35 +67,31 @@
       </div>
 
       <div>
-        <fieldset>
-          <legend>Would you like to join our mailing list</legend>
-          <label>
-
-            <input type="radio" name="JoinMailingList" value="Yes" required/> Yes <br>
-            <input type="radio" name="JoinMailingList" value="No"/> No
-
-          </label>
-        </fieldset>
+        <label for="zipCode">Zip Code</label> <br>
+        <input type="text" name="Zip_Code" id="ZipCode"
+          placeholder="Zip Code Here" required>
       </div>
-      
+
       <div>
         <fieldset>
-          <legend>Interested In?</legend>
+          <legend>Would you like to join our mailing list
+          </legend>
           <label>
 
-            <input type="checkbox" name="InterestedIn" value="Website" /> Website <br>
-            <input type="checkbox" name="InterestedIn" value="OnlineCalender"/> Online Calender <br>
-            <input type="checkbox" name="InterestedIn" value="ContactForm"/> Contact Form <br>
-            <input type="checkbox" name="InterestedIn" value="Lollipops"/> Lollipops
-
+            <input type="radio" name="JoinMailingList"
+              value="Yes" required /> Yes <br>
+            <input type="radio" name="JoinMailingList"
+              value="No" /> No
 
           </label>
         </fieldset>
       </div>
 
+
       <div>
-        <label for="Comments">Comments</label> <br>
-        <textarea name="Comments" id="Comments" cols="34" rows="16"></textarea>
+        <label for="Notes">Notes</label> <br>
+        <textarea name="Notes" id="Notes" cols="34"
+          rows="16"></textarea>
       </div>
 
       <div>

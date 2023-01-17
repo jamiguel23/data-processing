@@ -1,6 +1,9 @@
 # data-processing
 data processing lab.
 
+Repo:
+<https://github.com/jamiguel23/data-processing>
+
 Deployed:
 <https://jamiguel23.github.io/data-processing/>
 

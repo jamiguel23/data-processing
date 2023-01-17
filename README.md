@@ -1,4 +1,5 @@
 # data-processing
+
 data processing lab.
 
 Repo:
@@ -9,7 +10,7 @@ Deployed:
 
 Lab requirements:
 
-Background: One key task for developers is to collect information from users via forms. For this assignment, we'll create an HTML form that will collect data from a user and process that data upon submission. 
+Background: One key task for developers is to collect information from users via forms. For this assignment, we'll create an HTML form that will collect data from a user and process that data upon submission.
 
 Cart with 3 Items:  For this assignment we'll simulate a shopping cart in which the user can select up to one item each of 3 items.  The details of these items, including the cost, images and HTML/CSS to deliver the items to your page can be found in the following repo: Widgets Partial RepoLinks to an external site.
 
@@ -52,6 +53,3 @@ Upon submission, the cart items are totaled and title case is applied to the Shi
 Created During Class: The work for this assignment was chiefly done together over the course of several classes.  Please view the recordings to see exactly how we did this work.
 
 Submission: Put a link to the working version of your Data Processing web page on your Portal and submit your Portal.
-
-
-

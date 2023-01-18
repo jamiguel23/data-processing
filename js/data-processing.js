@@ -5,8 +5,9 @@ const queryString = window.location.search;
 if (queryString.length > 0) {
   var urlParams = new URLSearchParams(queryString);
   let data = "";
+  let cart = "";
   let total = 0;
-  data += "<h3> Cart Contents </h3>"
+  cart += "<h3> Cart Contents </h3>"
   
   // Log the values
   urlParams.forEach((value, key) => {
@@ -17,30 +18,32 @@ if (queryString.length > 0) {
       switch(value){
         
         case "Widget":
-          data += "Widget: $3.99 <br>"
+          cart += "Widget: $3.99 <br>"
           total += 3.99
         break;
 
         case "Thingy":
-          data += "Widget: $1.99 <br>"
+          cart += "Thingy: $1.99 <br>"
           total += 1.99
         break
 
         case "Sprocket":
-          data += "Widget: $5.99 <br>"
+          cart += "Sprocket: $5.99 <br>"
           total += 5.99
         break
       }
 
-      data = "total:" + total+ "<br>"
-
+      
     } else {
       
       key = key.split("_").join(" ");
       data += `<p>${key}: ${value}</p>`
     }
-
+    
   });
+  
+  cart += "total:" + total+ "<br>"
+  data = cart + data;
 
   data += '<p><a href="index.html">CLEAR</a></p>'
   document.getElementById('output').innerHTML = data

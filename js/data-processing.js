@@ -2,6 +2,7 @@
 
 const queryString = window.location.search;
 
+//courtesy of free code camp
 function titleCase(str) {
   return str.toLowerCase().split(' ').map(function(word) {
     return word.replace(word[0], word[0].toUpperCase());

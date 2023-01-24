@@ -2,6 +2,12 @@
 
 const queryString = window.location.search;
 
+function titleCase(str) {
+  return str.toLowerCase().split(' ').map(function(word) {
+    return word.replace(word[0], word[0].toUpperCase());
+  }).join(' ');
+}
+
 if (queryString.length > 0) {
   var urlParams = new URLSearchParams(queryString);
   let data = "";
@@ -35,9 +41,15 @@ if (queryString.length > 0) {
 
       
     } else {
+
+      console.log('this is the value', value)
+      console.log('this is the value after function', titleCase(value))
+      // console.log('this is the key', key)
+
+      let cased = titleCase(value)
       
       key = key.split("_").join(" ");
-      data += `<p>${key}: ${value}</p>`
+      data += `<p>${key}: ${cased}</p>`
     }
     
   });
